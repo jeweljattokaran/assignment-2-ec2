@@ -1,0 +1,41 @@
+                                                                   assignment - 2
+
+                                                      elastic compute cloud (ec2)
+                                                   working with security groups
+  
+               security group
+
+  Security groups act as a firewall for associated instances, controlling both inbound and outbound traffic at the instance level.       You must add rules to a security group that enable you to connect to your instance from your IP address using SSH.You'll need the public IP address of your local computer, which you can get using a service. 
+
+              steps To create a security group
+
+1)  Open the Amazon EC2 console.
+
+2)  From the navigation bar, select a region for the security group. Security groups are specific to a region, so you should select the same region in which you created your key pair.
+
+3)  Click Security Groups in the navigation pane. 
+
+4)  Click Create Security Group.
+
+5)  Enter a name for the new security group and a description. Choose a name that is easy for you to remember.For example, me_SG_useast2.
+
+6)  In the VPC list, select your VPC. If you have a default VPC, it's the one that is marked with an asterisk.
+
+    If your account supports EC2-Classic, select the VPC that you created in the previous task.
+
+7)  On the Inbound tab, create the following rules and then click Create.
+
+                              *Select HTTP from the Type list, and make sure that Source is set to Anywhere.
+                              *Select HTTPS from the Type list, and make sure that Source is set to Anywhere.
+                              *Select SSH from the Type list. In the Source box, ensure Custom is selected, and specify the public IP address of your computer or network in CIDR notation.
+                     these are the steps for creating a security group in EC2.
+
+
+                 working with security groups
+ 
+                 in security groups there are so many working function included in it.they are:
+                                     *security groups can be created for ec2 classic and for ec2 -vpc.   
+                                     *there are security group rules,we can add rules to security group and delete rules from security groups.
+
+                                     *we can default security group,custom security group,create security group,describe our security group and delete security groups.
+
